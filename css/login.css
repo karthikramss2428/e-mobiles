@@ -1,0 +1,58 @@
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font: 14px sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.bg-img {
+
+    min-height: 380px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.bg-img {
+    background-image: url("images/login.jpg");
+    height: 100%;
+    width:100%;
+}
+
+
+.wrapper {
+    position: absolute;
+    right: 0px;
+    margin: 20px;
+    max-width: 500px;
+    width: 350px;
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+/* Full-width input fields */
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus,
+input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}

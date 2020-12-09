@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Check</title>
+        <script src="jquery-1.11.1.min.js"></script>
+        <style>
+            p#cf7_controls {
+  text-align:center;
+}
+#cf7_controls span {
+  padding-right:2em;
+  cursor:pointer;
+}
+#cf7 {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto 10px;
+}
+#cf7 img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  opacity:0;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+
+#cf7 img.opaque {
+  opacity:1;
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=1);
+}
+        </style>
+    </head>
+    <body>
+        <div id="cf7" class="shadow">
+            <img class='opaque' src="r7pro.jpg" />
+            <img src="pocox3.jpeg;" />
+            <img src="m51.jpg;" />
+            <img src="pic9.jpg;" />
+          </div>
+          <p id="cf7_controls">
+            <span class="selected">Image 1</span>
+            <span>link1</span>
+            <span>link2</span>
+            <span>link3</span>
+          </p>
+          <script>
+              $(document).ready(function() {
+  $("#cf7_controls").on('click', 'span', function() {
+    $("#cf7 img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $("#cf7 img").eq(newImage).addClass("opaque");
+
+    $("#cf7_controls span").removeClass("selected");
+    $(this).addClass("selected");
+  });
+});
+          </script>
+    </body>
+</html>

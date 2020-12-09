@@ -1,0 +1,259 @@
+h1
+{
+    text-align: center;
+    font-family: Comic Sans MS;
+    font-weight: 900;
+    font-size: 35px;
+    color: red;
+    padding: 0%;
+    animation: animate 5s infinite;
+}
+@keyframes animate
+{
+    0%
+    {
+        color:red;
+        margin-bottom: -40px;
+    }
+    25%
+    {
+        color: chartreuse;
+        margin-bottom: -40px;
+    }
+    50%
+    {
+        color: blue;
+        margin-bottom: -40px;
+    }
+    100%
+    {
+        color: red;
+        margin-bottom: -40px;
+    }
+}
+
+body
+{
+    background-color:white;
+}
+#pocox3
+{
+    display:none;
+}
+#first
+{
+    background-color:black;
+    border-color: black;
+    height:70px;
+    border-radius: 8px;
+}
+#pic1
+{
+   position: absolute;
+   height: 50px;
+   width: 50px;
+   left:12px;
+   top:12px;
+   padding: 0px;
+}
+#pic2
+{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    left:1300px;
+    top:14px;
+}
+#pic3
+{
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left:1360px;
+    top:10px;
+}
+#pic4
+{
+    position: absolute;
+    height:55px;
+    width: 50px;
+    left:1420;
+    top:14px;
+}
+#pic5
+{
+    position: absolute;
+    height:50px;
+    width:50px;
+    left:1480px;
+    top:14px;
+}
+
+
+#one
+{
+    height: 456px;
+    width: 1580px;
+    position:absolute;
+    left:300px;
+    top:140px;
+    background-color: black;
+
+}
+
+#third
+{
+    height: 550px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+#half1
+{
+    position: absolute;
+    width: 45%;
+    height: 500px;
+    top:793px;
+    left:20px;
+    background-color:black;
+    border-radius: 8px;
+}
+#half2
+{
+    position: absolute;
+    width: 45%;
+    height: 500px;
+    left:800px;
+    top:793px;
+    background-color:black;
+    border-radius: 8px;
+
+}
+h2
+{
+    font-family: Comic Sans MS;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    color:white;
+    animation: animates 5s infinite;
+}
+@keyframes animates
+{
+    0%
+    {
+        color:red;
+    }
+    25%
+    {
+        color: chartreuse;
+
+    }
+    50%
+    {
+        color: blue;
+
+    }
+    100%
+    {
+        color: red;
+
+    }
+}
+.button {
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -30px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  } 
+#button1
+{
+    position: absolute;
+    left:50px;
+    top:100px;
+}
+#button2
+{
+    position: absolute;
+    left:300px;
+    top:100px;
+}
+#button3
+{
+    position: absolute;
+    left:50px;
+    top:200px;
+}
+#button4
+{
+    position: absolute;
+    left:300px;
+    top:200px;
+}
+#button5
+{
+    position: absolute;
+    left:50px;
+    top:300px;
+}
+#button6
+{
+    position: absolute;
+    left:300px;
+    top:300px;
+}
+#best1
+{
+    position: absolute;
+    top:110px;
+    left:80px;
+    width:180px;
+    height: 180px;
+}
+#best2
+{
+    position: absolute;
+    top:110px;
+    left:285px;
+    width:180px;
+    height: 180px;
+}
+#best3
+{
+    position: absolute;
+    top:110px;
+    left:480px;
+    width:180px;
+    height: 180px;
+}
+

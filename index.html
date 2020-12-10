@@ -2,224 +2,179 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
         <title>Mobiles</title>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="main.js"></script>
         <style>
-         body
-            {
-                margin:0px auto;
-            }
-         @media only screen and (max-width: 600px) {
-         body {
-               background-color: lightblue;
-         }
+        body
+        {
+            background-color:orangered;
         }
-        #second
-        { 
-            background-color:lavender;
-            border-color: whitesmoke;
-            height:590px;
-            width:1560px;
-            border-radius: 8px;
-            color:white;
-            font-size: 24px;
-            font-family: Comic Sans MS;
+        .navbar 
+          {
+            margin-bottom: 0;
+            border-radius: 0;
+        }
+        .row.content {height: 450px}
+        .sidenav {
+           padding-top: 20px;
+           background-color: #f1f1f1;
+           height: 100%;
+        }
+        @media screen and (max-width: 767px) {
+          .sidenav {
+            height: auto;
+            padding: 15px;
+        }
+        .row.content {height:auto;} 
+       }
+       #navi
+       {
+           margin: 20px;
+           border-radius: 8px;
+       }
+       #align
+       {
+           background-image: url("deco3.gif");
+           margin-top: 10px;
+           padding:20px;
+           text-align: center;
+           color:white;
+           border-radius: 8px;
+           animation: animate 3s infinite;
+           font-family: Comic Sans MS;
+       }
+       #anim
+       {
+        font-weight: 900;
+        font-family: Comic Sans MS;
+        animation: animate 5s infinite;
+       }
+       @keyframes animate
+     {
+        0%
+       {
+          color:red;
+
+       }
+       25%
+      {
+         color: chartreuse;
+       }
+       50%
+      {
+         color: blue;
+      }
+       100%
+      {
+          color: red;
+       }
+    }
+
+       #align1
+       {
+           margin-top: 10px;
+           padding:20px;
+           border-radius: 8px;
+           background-color: black;
+           color:white;
+           font-weight:800;
+
+       }
+       #align2
+       {
+           margin-top: 15px;
+           padding:20px;
+           border-radius: 8px;
+           background-color: black;
+           color:white;
+           font-weight:1000;
+           font-family: Comic Sans MS;
+       }
+       #align3
+       {
+            margin-top: 15px;
+           padding:20px;
+           border-radius: 8px;
+           background-color:black;
+           color:white;
+           font-weight:1000;
+           font-family: Comic Sans MS;
+       }
+       .responsive {
+            width: 100%;
+            max-width: 1600px;
+           height: auto;
         } 
-        #side
-        {
-            position: absolute;
-            border-color: 1px solid black;
-            width:345;
-            left:10px;
-            top:190px;
-            border-radius:8px;
-            background-color:black;
-            animation: animat 2s infinite;
-            color:chartreuse
-        }
-        @keyframes animat
-        {
-           0%
-           {
-             color:chartreuse;
-             margin-bottom: -40px;
-           }
-           25%
-           {
-              color: yellow;
-              margin-bottom: -40px;
-            }
-            50%
-            {
-              color:orangered;
-              margin-bottom: -40px;
-            }
-           100%
-           {
-            color:chartreuse;
-            margin-bottom: -40px;
-           }
-        }
-        #side1
-        {
-            position: absolute;
-            border-color: 1px solid black;
-            width:370;
-            left:1170px;
-            top:190px;
-            border-radius:8px;
-            background-color:black;
-            animation: animat 2s infinite;
-        }
-        * {box-sizing: border-box;}
-        .mySlides {display: none;
-        border-radius: 8px;}
-        img {vertical-align: middle;}
-        .slideshow-container
-        {
-            top: 185px;
-            left:360px;
-            max-width: 800px;
-            position: absolute;
-            border-radius: 8px;
-            margin: auto;
-        }
-        .dot
-        {
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        .active
-        {
-             background-color: #717171;
-        }
-        .fade 
-        {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        @-webkit-keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-        @keyframes fade {
-            from {opacity: .4} 
-            to {opacity: 1}
-        }
-            
-        </style>
+      </style>
     </head>
     <body>
-        <div id="first">
-             <img src="pic1.png" id="pic1">
-             <h1><div id="box">Shopping Corner</div></h1>
-            <img src="pic2.png" id="pic2" type="button" onclick="whatsapp()">
-             <img src="pic3.jpg" id="pic3" type="button" onclick="instagram()">
-             <img src="pic4.jpg" id="pic4" type="button" onclick="twitter()">
-             <img src="pic5.png" id="pic5" type="button" onclick="facebook()">
-        </div>
-        <br>
-        <br>
-        <div id="second">
-            <div class="slideshow-container">
-                <div class="mySlides fade">
-                    <img src="r7pro.jpg" style="width:100%" onclick="first()">
-                </div>
-                <div class="mySlides fade">
-                    <img src="pocox3.jpeg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="m51.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="pic9.jpg" style="width:100%">
-                </div>
-                <div class="mySlides fade">
-                    <img src="oneplus8.jpg" style="width:100%">
-                </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" ></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot"></span> 
-                    <span class="dot" ></span> 
-                    <span class="dot"></span> 
-                </div>
-            </div>
-            <div id="side">
-                <ul>
-                    <li>Good and Trusted Products</li>
-                    <li>1 year Company warranty</li>
-                    <li>Trusted Sellers and Customers</li>
-                    <li>Can get more than your expectation</li>
-                    <li>Get upto 10% Cashback</li>
-                    <li>Free Earbuds with all your buying phones</li>
-                    <li>30 days replacement policy for all mobiles</li>
+        <nav class="navbar navbar-inverse" id="navi">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-shop-window" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zm2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+                <a class="navbar-brand" href="#" id="anim">Shopping Corner</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="project5.html">Realme</a></li>
+                    <li><a href="project4.html">Redmi</a></li>
+                    <li><a href="project1.html">Samsung</a></li>
+                    <li><a href="project3.html">Vivo</a></li>
+                    <li><a href="project.html">Oneplus</a></li>
+                    <li><a href="project2.html">Poco</a></li>
                 </ul>
+              </div>
+
             </div>
-            <div id="side1">
-                <ul>
-                    <li>Great products on Great Deals</li>
-                    <li>All Bank cards upto 10% discount</li>
-                    <li>No cost EMI is also available for All cards</li>
-                    <li>Highly rated products</li>
-                    <li>64mp camera phones Starts at just ₹10999</li>
-                    <li>Upto 65w Dart Charging phones are available</li>
-                    <li>Ultra Clear Display available</li>
-                </ul>
+        </nav>
+        <div class="container-fluid">
+          <div id="align">
+              <h1>SHOPPING CORNER</h1>
+              <h1>HAPPY NEW YEAR 2021</h1>
+          </div>
+        </div>
+        <div class="container-fluid">
+        <div id="align1">
+            <img src="vivov204.jpg" class="responsive">
+        </div>
+        <div class="container-fluid">
+         <div class="row justify-content-start">
+            <div class="col-md-6">
+                <div id="align2">
+                    <ul>
+                        <li>Good and Trusted Products</li>
+                        <li>1 year Company warranty</li>
+                        <li>Trusted Sellers and Customers</li>
+                        <li>Can get more than your expectation</li>
+                        <li>Get upto 10% Cashback</li>
+                        <li>Free Earbuds with all your buying phones</li>
+                        <li>30 days replacement policy for all mobiles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="align3">
+                    <ul>
+                        <li>Great products on Great Deals</li>
+                        <li>All Bank cards upto 10% discount</li>
+                        <li>No cost EMI is also available for All cards</li>
+                        <li>Highly rated products</li>
+                        <li>64mp camera phones Starts at just ₹10999</li>
+                        <li>Upto 65w Dart Charging phones are available</li>
+                        <li>Ultra Clear Display available</li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <div id="third">
-             <div id="half1">
-                <h2>Shop Buy your favourite brands</h2>
-                <button class="button" id="button1" onclick="realme()"><span>Realme</span></button>
-                <button class="button" id="button2" onclick="redmi()"><span>Redmi</span></button>
-                <button class="button" id="button3" onclick="poco()"><span>Poco</span></button>
-                <button class="button" id="button4" onclick="oneplus()"><span>Oneplus</span></button>
-                <button class="button" id="button5" onclick="samsung()"><span>Samsung</span></button>
-                <button class="button" id="button6" onclick="vivo()"><span>Vivo</span></button>
-             </div>
-             <div id="half2">
-                 <h2>Best Sellers in All Segments</h2>
-                 <img id="best1" src="best1.jpg">
-                 <img id="best2" src="best2.jpg">
-                 <img id="best3" src="best3.jpg">
-             </div>
         </div>
-        <script>
-            var slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              var i;
-              var slides = document.getElementsByClassName("mySlides");
-              var dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 10000);
-            }
-            function first()
-            {
-                location.href="real.html";
-            }
-            </script>
     </body>
 </html>
